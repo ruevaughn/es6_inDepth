@@ -1,1 +1,1 @@
-console.log('hello from javascript');
+document.getElementById('example').innerHTML = "JavaScript rules";
