@@ -1,2 +1,3 @@
-console.log('hello webpack');
-console.log('hello browser');
+const emails = ['frodo@email.com', 'samwise@email.com', 'merry@email.com']
+emails.push('pippin@email.com');
+console.log(emails)
