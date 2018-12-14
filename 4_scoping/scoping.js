@@ -31,6 +31,7 @@ console.log('overall venue limit', limit);
 
 
 // #3 Block Scoping with const
+// const cannot be re-assigned or re-declared
 const limit = 200;
 
 {
