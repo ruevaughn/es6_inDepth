@@ -1,4 +1,7 @@
+// No import or Export system, though it has direct
+// To the Redux Library:
 // https://stephengrider.github.io/JSPlaygrounds/
+//
 // Example Redux Store, Reducer, and Action
 
 const reducer = (state = [], action) => {
