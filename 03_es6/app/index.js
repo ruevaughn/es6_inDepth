@@ -1,14 +1,8 @@
-// 1 Push array method
-const emails = ['frodo@email.com', 'samwise@email.com', 'merry@email.com']
-emails.push('pippin@email.com');
-console.log(emails)
+import { fellowship, total } from './fellowship';
+import multiply, { add } from './math';
 
+console.log(fellowship);
+console.log(total);
 
-const addToCart = (item, number) => {
-  console.log(Number.isSafeInteger(number))
-  return Number.isFinite(number);
-}
-
-addToCart('shirt', 5);
-addToCart('shirt', Infinity);
-addToCart('shirt', Math.pow(2, 54));
+console.log(add(5, 10));
+console.log(multiply(5, 10));
