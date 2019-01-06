@@ -4,6 +4,7 @@ import { Animal, Lion } from './libraries/lionKing';
 import Calculator from './libraries/calculator';
 import { set, set2, charsSet } from './libraries/05-sets';
 import { aMap1, valMap, letters } from './libraries/06-maps';
+import { call, call2 } from './libraries/07-closures';
 
 // console.log(fellowship);
 // console.log(total);
@@ -57,4 +58,13 @@ import { aMap1, valMap, letters } from './libraries/06-maps';
 // for (let [key, value] of valMap.entries()) {
 //     console.log(`${key} points to ${value}`);
 // }
-console.log(letters);
+// console.log(letters);
+
+
+
+
+// Closures 
+//call();
+// call2()();
+let unveil = call2();
+unveil();
