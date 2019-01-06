@@ -3,12 +3,17 @@ import multiply, { add } from './libraries/math';
 import { Animal, Lion } from './libraries/lionKing';
 import Calculator from './libraries/calculator';
 import { set, set2, charsSet } from './libraries/05-sets';
+import { aMap1, valMap, letters } from './libraries/06-maps';
 
 // console.log(fellowship);
 // console.log(total);
 
 // console.log(add(5, 10));
 // console.log(multiply(5, 10));
+
+
+
+
 
 // Classes
 
@@ -20,6 +25,10 @@ import { set, set2, charsSet } from './libraries/05-sets';
 // console.log(son);
 // son.hello();
 
+
+
+
+
 // // Classes 2
 // let m = Calculator.multiply(5, 7);
 // console.log(m);
@@ -27,10 +36,25 @@ import { set, set2, charsSet } from './libraries/05-sets';
 // let a = Calculator.add(5, 7);
 // console.log(a);
 
+
+
+
+
 // Sets
 // console.log(set);
 // console.log(set2);
 // for (let element of set2.values()) {
 //   console.log(element);
 // }
-console.log(charsSet);
+// console.log(charsSet);
+
+
+
+
+// Maps
+// console.log(aMap1);
+// console.log(valMap);
+// for (let [key, value] of valMap.entries()) {
+//     console.log(`${key} points to ${value}`);
+// }
+console.log(letters);
