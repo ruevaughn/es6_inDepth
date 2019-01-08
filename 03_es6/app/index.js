@@ -5,6 +5,7 @@ import Calculator from './libraries/calculator';
 import { set, set2, charsSet } from './libraries/05-sets';
 import { aMap1, valMap, letters } from './libraries/06-maps';
 import { call, call2 } from './libraries/07-closures';
+import addSuffix, { product } from './libraries/08-function-factories';
 
 // console.log(fellowship);
 // console.log(total);
@@ -41,7 +42,7 @@ import { call, call2 } from './libraries/07-closures';
 
 
 
-// Sets
+// 05 Sets
 // console.log(set);
 // console.log(set2);
 // for (let element of set2.values()) {
@@ -52,7 +53,7 @@ import { call, call2 } from './libraries/07-closures';
 
 
 
-// Maps
+// 06 Maps
 // console.log(aMap1);
 // console.log(valMap);
 // for (let [key, value] of valMap.entries()) {
@@ -63,8 +64,31 @@ import { call, call2 } from './libraries/07-closures';
 
 
 
-// Closures 
+// 07 Closures 
 //call();
 // call2()();
-let unveil = call2();
-unveil();
+// let unveil = call2();
+// unveil();
+
+
+
+
+// 08 Function Factories ( with ES6 Closures )
+// let add_ness = addSuffix("ness")
+// // closure which remembers the lexical environment of concat function
+// console.log(add_ness);
+// let happy = add_ness("happi");
+// console.log(happy);
+
+// let add_ful = addSuffix("ful"); 
+// let f = add_ful("fruit");
+// console.log(f);
+
+// let mult5 = product(5);
+// let result = mult5(1231541);
+// console.log(result);
+// console.log(product(5)(5));
+// console.log(mult5(3));
+
+// let double = product(2);
+// console.log(double(9));
