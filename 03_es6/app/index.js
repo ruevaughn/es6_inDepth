@@ -84,11 +84,11 @@ import addSuffix, { product } from './libraries/08-function-factories';
 // let f = add_ful("fruit");
 // console.log(f);
 
-// let mult5 = product(5);
-// let result = mult5(1231541);
-// console.log(result);
-// console.log(product(5)(5));
-// console.log(mult5(3));
+let mult5 = product(5);
+let result = mult5(1231541);
+console.log(result);
+console.log(product(5)(5));
+console.log(mult5(3));
 
-// let double = product(2);
-// console.log(double(9));
+let double = product(2);
+console.log(double(9));

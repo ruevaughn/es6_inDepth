@@ -7,11 +7,8 @@ const addSuffix = (x) => {
   return concat;
 }
 
-const product = (x) => {
-  return y => {
-    return y * x;
-  }  
-}
+const product = x => y => y * x
+
 
 export { product };
 export default addSuffix;
