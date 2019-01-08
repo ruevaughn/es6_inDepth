@@ -6,6 +6,24 @@ import { set, set2, charsSet } from './libraries/05-sets';
 import { aMap1, valMap, letters } from './libraries/06-maps';
 import { call, call2 } from './libraries/07-closures';
 import addSuffix, { product } from './libraries/08-function-factories';
+import budget from './libraries/09-private-methods';
+
+// 09 Private Methods (Using Closures)
+//    Also called the Module Pattern in Es6
+let wallet = budget();
+console.log(wallet);
+wallet.deposit20();
+wallet.withdraw20();
+wallet.deposit20();
+wallet.deposit20();
+console.log(wallet.checkBal());
+
+// Returns undefined because we're not returning the balance
+// Balance is a emulated private variable and now is returned
+// By methods which return the balance variable but never have access to it.
+console.log(wallet.balance)
+
+
 
 // console.log(fellowship);
 // console.log(total);
@@ -84,11 +102,11 @@ import addSuffix, { product } from './libraries/08-function-factories';
 // let f = add_ful("fruit");
 // console.log(f);
 
-let mult5 = product(5);
-let result = mult5(1231541);
-console.log(result);
-console.log(product(5)(5));
-console.log(mult5(3));
+// let mult5 = product(5);
+// let result = mult5(1231541);
+// console.log(result);
+// console.log(product(5)(5));
+// console.log(mult5(3));
 
-let double = product(2);
-console.log(double(9));
+// let double = product(2);
+// console.log(double(9));
