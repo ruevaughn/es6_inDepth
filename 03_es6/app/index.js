@@ -8,6 +8,21 @@ import { call, call2 } from './libraries/07-closures';
 import addSuffix, { product } from './libraries/08-function-factories';
 import budget from './libraries/09-private-methods';
 import letterMaker, { countMaker, evens} from './libraries/10-generators';
+import arrayIterator, { es6ArrayIterator } from './libraries/11-custom-iterators';
+
+// 11 Custom Iterators
+// let it = arrayIterator([1, 2, 3]);
+// console.log(it.next());
+// console.log(it.next());
+// console.log(it.next());
+// console.log(it.next());
+
+var it = es6ArrayIterator(1, 2, 3);
+console.log(it.next().value);
+
+
+
+
 
 // 10 Generators
 
@@ -26,12 +41,12 @@ import letterMaker, { countMaker, evens} from './libraries/10-generators';
 // console.log(countGen.next().done)
 
 // Generators 2
-let generateEvens = evens();
-console.log(generateEvens.next().value);
-console.log(generateEvens.next().value);
-console.log(generateEvens.next().value);
-console.log(generateEvens.next(true).value);
-console.log(generateEvens.next().value);
+// let generateEvens = evens();
+// console.log(generateEvens.next().value);
+// console.log(generateEvens.next().value);
+// console.log(generateEvens.next().value);
+// console.log(generateEvens.next(true).value);
+// console.log(generateEvens.next().value);
 
 
 
