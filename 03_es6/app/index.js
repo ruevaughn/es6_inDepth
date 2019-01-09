@@ -7,7 +7,7 @@ import { aMap1, valMap, letters } from './libraries/06-maps';
 import { call, call2 } from './libraries/07-closures';
 import addSuffix, { product } from './libraries/08-function-factories';
 import budget from './libraries/09-private-methods';
-import letterMaker, { countMaker } from './libraries/10-generators';
+import letterMaker, { countMaker, evens} from './libraries/10-generators';
 
 // 10 Generators
 
@@ -18,12 +18,25 @@ import letterMaker, { countMaker } from './libraries/10-generators';
 // console.log(letterGen.next().value);
 // console.log(letterGen.next().value);
 
-let countGen = countMaker();
-console.log(countGen.next().value)
-console.log(countGen.next().value)
-console.log(countGen.next().value)
-console.log(countGen.next().value)
-console.log(countGen.next().done)
+// let countGen = countMaker();
+// console.log(countGen.next().value)
+// console.log(countGen.next().value)
+// console.log(countGen.next().value)
+// console.log(countGen.next().value)
+// console.log(countGen.next().done)
+
+// Generators 2
+let generateEvens = evens();
+console.log(generateEvens.next().value);
+console.log(generateEvens.next().value);
+console.log(generateEvens.next().value);
+console.log(generateEvens.next(true).value);
+console.log(generateEvens.next().value);
+
+
+
+
+
 
 // 09 Private Methods (Using Closures)
 //    Also called the Module Pattern in Es6

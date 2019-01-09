@@ -17,4 +17,19 @@ function* countMaker() {
   }
 }
 
-export { countMaker };
+// Generators 2 - More involved Generators - controlled flow
+function* evens() {
+  let count = 0;
+  while(true) {
+    count += 2;
+    let reset = yield count;
+    if (reset) {
+      count = 0;
+    }
+  }
+}
+
+
+export { countMaker, evens };
+
+
