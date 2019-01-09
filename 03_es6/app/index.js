@@ -7,21 +7,38 @@ import { aMap1, valMap, letters } from './libraries/06-maps';
 import { call, call2 } from './libraries/07-closures';
 import addSuffix, { product } from './libraries/08-function-factories';
 import budget from './libraries/09-private-methods';
+import letterMaker, { countMaker } from './libraries/10-generators';
+
+// 10 Generators
+
+// We don't use the new keyword when defining instances of Generators
+// let letterGen = letterMaker();
+// console.log(letterGen.next().value);
+// console.log(letterGen.next().value);
+// console.log(letterGen.next().value);
+// console.log(letterGen.next().value);
+
+let countGen = countMaker();
+console.log(countGen.next().value)
+console.log(countGen.next().value)
+console.log(countGen.next().value)
+console.log(countGen.next().value)
+console.log(countGen.next().done)
 
 // 09 Private Methods (Using Closures)
 //    Also called the Module Pattern in Es6
-let wallet = budget();
-console.log(wallet);
-wallet.deposit20();
-wallet.withdraw20();
-wallet.deposit20();
-wallet.deposit20();
-console.log(wallet.checkBal());
+// let wallet = budget();
+// console.log(wallet);
+// wallet.deposit20();
+// wallet.withdraw20();
+// wallet.deposit20();
+// wallet.deposit20();
+// console.log(wallet.checkBal());
 
 // Returns undefined because we're not returning the balance
 // Balance is a emulated private variable and now is returned
 // By methods which return the balance variable but never have access to it.
-console.log(wallet.balance)
+// console.log(wallet.balance)
 
 
 
