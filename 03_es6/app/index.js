@@ -1,14 +1,19 @@
-import { fellowship, total } from './libraries/fellowship';
-import multiply, { add } from './libraries/math';
-import { Animal, Lion } from './libraries/lionKing';
-import Calculator from './libraries/calculator';
-import { set, set2, charsSet } from './libraries/05-sets';
-import { aMap1, valMap, letters } from './libraries/06-maps';
-import { call, call2 } from './libraries/07-closures';
-import addSuffix, { product } from './libraries/08-function-factories';
-import budget from './libraries/09-private-methods';
-import letterMaker, { countMaker, evens} from './libraries/10-generators';
-import arrayIterator, { es6ArrayIterator } from './libraries/11-custom-iterators';
+import { fellowship, total } from "./libraries/fellowship";
+import multiply, { add } from "./libraries/math";
+import { Animal, Lion } from "./libraries/lionKing";
+import Calculator from "./libraries/calculator";
+import { set, set2, charsSet } from "./libraries/05-sets";
+import { aMap1, valMap, letters } from "./libraries/06-maps";
+import { call, call2 } from "./libraries/07-closures";
+import addSuffix, { product } from "./libraries/08-function-factories";
+import budget from "./libraries/09-private-methods";
+import letterMaker, { countMaker, evens } from "./libraries/10-generators";
+import arrayIterator, { es6ArrayIterator } from "./libraries/11-custom-iterators";
+import promise from "./libraries/12-promises";
+
+// 12 Promises
+promise.then(response => console.log(response)).catch(error => console.log(error));
+console.log("after promise consumption");
 
 // 11 Custom Iterators
 // let it = arrayIterator([1, 2, 3]);
@@ -17,12 +22,8 @@ import arrayIterator, { es6ArrayIterator } from './libraries/11-custom-iterators
 // console.log(it.next());
 // console.log(it.next());
 
-var it = es6ArrayIterator(1, 2, 3);
-console.log(it.next().value);
-
-
-
-
+// var it = es6ArrayIterator(1, 2, 3);
+// console.log(it.next().value);
 
 // 10 Generators
 
@@ -48,11 +49,6 @@ console.log(it.next().value);
 // console.log(generateEvens.next(true).value);
 // console.log(generateEvens.next().value);
 
-
-
-
-
-
 // 09 Private Methods (Using Closures)
 //    Also called the Module Pattern in Es6
 // let wallet = budget();
@@ -68,17 +64,11 @@ console.log(it.next().value);
 // By methods which return the balance variable but never have access to it.
 // console.log(wallet.balance)
 
-
-
 // console.log(fellowship);
 // console.log(total);
 
 // console.log(add(5, 10));
 // console.log(multiply(5, 10));
-
-
-
-
 
 // Classes
 
@@ -90,20 +80,12 @@ console.log(it.next().value);
 // console.log(son);
 // son.hello();
 
-
-
-
-
 // // Classes 2
 // let m = Calculator.multiply(5, 7);
 // console.log(m);
 
 // let a = Calculator.add(5, 7);
 // console.log(a);
-
-
-
-
 
 // 05 Sets
 // console.log(set);
@@ -113,9 +95,6 @@ console.log(it.next().value);
 // }
 // console.log(charsSet);
 
-
-
-
 // 06 Maps
 // console.log(aMap1);
 // console.log(valMap);
@@ -124,17 +103,11 @@ console.log(it.next().value);
 // }
 // console.log(letters);
 
-
-
-
-// 07 Closures 
+// 07 Closures
 //call();
 // call2()();
 // let unveil = call2();
 // unveil();
-
-
-
 
 // 08 Function Factories ( with ES6 Closures )
 // let add_ness = addSuffix("ness")
@@ -143,7 +116,7 @@ console.log(it.next().value);
 // let happy = add_ness("happi");
 // console.log(happy);
 
-// let add_ful = addSuffix("ful"); 
+// let add_ful = addSuffix("ful");
 // let f = add_ful("fruit");
 // console.log(f);
 
